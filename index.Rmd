@@ -7,31 +7,6 @@ output:
         toc_float: TRUE
 ---
 
-This is my JSC370 Final Project website.
+Bruh
 
-```{r include = FALSE}
-source("process_starbucks_data.R")
-p1 <- ggplot(sb_locs_state, aes(x = population, y = n_stores, color = state)) +
-  geom_point(alpha = 0.8)
-p2 <- ggplot() +
-  geom_histogram(data = subset(sb_nutr, Category == "Food"), aes(x = Calories), binwidth = 50, fill = "blue", alpha = .2) +
-  geom_histogram(data = subset(sb_nutr, Category == "Drinks"), aes(x = Calories), binwidth = 50, fill = "red", alpha = .2) +
-  labs(title = "Calories of Starbucks Food/Drinks",
-       x = "Calories", y = "Frequency")
-```
-
-## Showcasing plots {.tabset}
-
-### Figure 1
-
-```{r echo=FALSE, warning = FALSE}
-p1
-```
-
-### Figure 2
-
-```{r echo=FALSE}
-p2
-```
-
-{-}
+This is an interesting homework
